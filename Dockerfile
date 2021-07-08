@@ -16,5 +16,9 @@ RUN mkdir /app
 WORKDIR /app
 COPY ./app/ /app
 
+# RUN chmod +x ./start.sh
+
 RUN adduser -D user
 USER user
+
+# CMD ["sh", "-c", "./start.sh"]
