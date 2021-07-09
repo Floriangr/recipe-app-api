@@ -22,6 +22,11 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install flake8
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - uses: harmon758/postgresql-action@v1
+      with:
+        postgresql version: '11'
+    - name: Run migrations
+      run: python manage.py migrate
     - name: Run tests
       run: python ./app/manage.py test
     - name: Lint with flake8
