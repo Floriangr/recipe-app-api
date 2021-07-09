@@ -1,4 +1,5 @@
 #! /bin/sh
+sleep 3
 python ./manage.py wait_for_db &&
 echo "waited for db" &&
 python ./manage.py migrate &&

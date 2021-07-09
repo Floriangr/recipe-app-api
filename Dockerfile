@@ -21,4 +21,4 @@ COPY ./app/ /app
 RUN adduser -D user
 USER user
 
-# CMD ["sh", "-c", "./start.sh"]
+# ENTRYPOINT ["sh", "-c", "./start.sh"]
