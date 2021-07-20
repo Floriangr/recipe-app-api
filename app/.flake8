@@ -1,5 +1,6 @@
 [flake8]
 ignore = E111
+max-line-length = 88
 exclude =
   migrations,
   __pycache__,
