@@ -23,7 +23,7 @@ services:
         window: 120s
   
   db:
-    image: postgres:13-alpine
+    image: postgis/postgis:13-master
     environment:
       - POSTGRES_DB=app
       - POSTGRES_USER=postgres
